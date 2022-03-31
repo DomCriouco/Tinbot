@@ -1,0 +1,27 @@
+{
+  "name": "tinbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn workspace bot-backend build",
+    "start": "yarn workspace bot-backend start"
+  },
+  "repository": "git+https://github.com/DomCriouco/Tinbot.git",
+  "keywords": [
+    "monorepo",
+    "express",
+    "react",
+    "microservices"
+  ],
+  "private": true,
+  "workspaces": [
+    "bot-backend"
+  ],
+  "author": "Enzo Soares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DomCriouco/Tinbot/issues"
+  },
+  "homepage": "https://github.com/DomCriouco/Tinbot#readme"
+}
