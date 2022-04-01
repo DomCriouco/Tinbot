@@ -12,7 +12,7 @@ export const createBots = async () => {
         }
     });
 
-    return res.data.faces.map(async (face: faceInterface) => {
+    return await Promise.all( res.data.faces.map((face: faceInterface) => {
         const bot = new botModel({
             picUrl: {
                 64: face.urls[1]["64"],
@@ -30,6 +30,6 @@ export const createBots = async () => {
             }
         });
 
-        return await bot.save();
-    });
+        return bot.save();
+    }));
 };

@@ -1,3 +1,4 @@
+import botsRoute from "./bots";
 import botRoute from "./bot";
 
-export {botRoute};
+export {botsRoute, botRoute};

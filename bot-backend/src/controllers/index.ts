@@ -1,3 +1,5 @@
-import {createBots} from "./bot";
+import {createBots} from "./createBots";
+import {retrieveBots} from "./retrieveBots";
+import {retrieveBot} from "./retrieveBot";
 
-export {createBots};
+export {createBots, retrieveBots, retrieveBot};
